@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leafar</title>
+</head>
+<link rel="stylesheet" href="cursos.css">
+<body>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="Portfólio.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="cursosc.html">Cursos Complementares</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+    <div class="logo">
+        <a href="Portfólio.html">
+            <img src="logo.png" class="logo1" style="width: 150px;"></a>
+    </div>
+    <div id="manuBtn">
+        <img src="Menu.png">
+    </div>
+
+    <div class="wrapper">
+        <section class="module parallax parallax1">
+            <h1 style="color:white">Cursos Complementares</h1>
+           </section>
+        
+           <section class="module content">
+            <div class="container">
+                <h2 style="color: white;">Curso de Informatica - SOS Tecnologia e Educação</h2>
+                <a href="https://www.sos.com.br/cursos"><img src="Sos.jpg" class="sos"></a>
+                <p style="color: rgb(0, 0, 0);"> Nesse curso aprimorei minhas habilidade com pacote office, informatica fundamenal e manuntenção de hardware e software. </p>
+            </div>
+            </div>
+
+    <footer class="nav-footer">
+        <div class="page-footer">
+            <div class="footer-logo">
+                <a href="Portfólio.html" aria-label="MDN homepage"><img src="logo.png" class="logo1" alt=""
+                        style="width: 150px;"></a>
+                <div class="contato">
+                    <p>Contatos:</p>
+                    <p>E-mail: r4f4elluc4s@gmail.com</p>
+                    <p>Telefone: (31) 9 9848-6175</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        var manuBtn = document.getElementById('manuBtn')
+        var sideNav = document.getElementById('sideNav')
+        var menu = document.getElementById('menu')
+
+        sideNav.style.right = "-250px";
+        manuBtn.onclick = function () {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menu.src = "Menu.png"
+            }
+            else {
+                sideNav.style.right = "-250px"
+                menu.src = "Menu.png"
+            }
+
+
+        }
+    </script>
+</body>
+</html>
